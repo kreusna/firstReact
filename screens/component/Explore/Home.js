@@ -19,13 +19,13 @@ export default class Category extends Component {
     render() {
         return (
             <TouchableHighlight onPress={ this.changePage }>
-                <View style={{ marginBottom: 10, width: this.props.width / 2 - 30, height: 250, borderWidth: 1, borderRadius: 5, borderColor: "#515559" }} >
+                <View style={{ marginBottom: 10, width: this.props.width / 2 - 30, height: 250, borderWidth: 1, borderRadius: 2, borderColor: "#515559" }} >
                     <View style={{ flex: 1 }} >
                         <Image style={{
                             flex: 1, height: null, width: null, resizeMode: 'cover'
                         }} source={require('../../../src/assets/home.jpg')} />
                     </View>
-                    <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'space-evenly', paddingLeft: 10 }} >
+                    <View style={{ backgroundColor:"#ffffff", flex: 1, alignItems: 'flex-start', justifyContent: 'space-evenly', paddingLeft: 10 }} >
                         <Text style={{ fontSize: 10, color: '#b63838', }} >
                             {this.props.type}
                         </Text>

@@ -21,7 +21,7 @@ export default class Explore extends Component {
     render() {
         return (
             <SafeAreaView style={{ flex: 1 }} >
-                <View style={{ flex: 1 }} >
+                <View style={{ flex: 1 , backgroundColor:"#f5f4f2" }} >
                     <View style={{ height: Platform.OS == "android" ? 40 + StatusBar.currentHeight : this.startHeaderHeight, backgroundColor: "white", borderBottomWidth: 1, borderBottomColor: "#dddddd" }}>
                         <View style={{
                             flexDirection: 'row', padding: 5, backgroundColor: 'white', marginHorizontal: 5,

@@ -11,6 +11,8 @@
     "react": "16.4.1",
     "react-native": "0.56.0",
     "react-native-camera": "^1.1.4",
+    "react-native-lightbox": "^0.7.0",
+    "react-native-looped-carousel": "^0.1.13",
     "react-native-star-rating": "^1.0.9",
     "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^2.9.0",

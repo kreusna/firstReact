@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, SafeAreaView,Button } from 'react-native';
+import { Text, View, SafeAreaView, Button,StyleSheet } from 'react-native';
 
 export default class ItemDetail extends React.Component {
 
@@ -32,7 +32,7 @@ export default class ItemDetail extends React.Component {
 
         return (
             <SafeAreaView style={{ flex: 1 }} >
-                <View style={{ flex: 1 }}>
+                <View style={styles.backGroundView} >
                     <Text>Hello Item {this.props.navigation.getParam("itemId", " No Id")} </Text>
                 </View>
                 <Button
@@ -43,3 +43,16 @@ export default class ItemDetail extends React.Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: 'center',
+    },
+    backGroundView: {
+        flex: 1, 
+        backgroundColor: "#f5f4f2"
+    }
+});
